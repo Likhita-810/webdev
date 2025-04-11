@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+</head>
+<body>
+    <h1>Learn HTML with me</h1>
+    <!--single line comment-->
+    <!--html is not case sensitive unlike other languages-->
+    
+    <!--Headings-->
+    <p>heading tags:</p>
+    <!--heading sizes are given based on the importance-->
+    <h1>heading 1</h1>
+    <h2>heading 2</h2>
+    <h3>heading 3</h3>
+    <h4>heading 4</h4>
+    <h5>heading 5</h5>
+    <h6>heading 6</h6>
+    <hr>
+    <!--anchor tags- links-->
+    <p>anchor tags</p>
+    <a href="http://goole.com">Google</a> <!--absolute path-->
+    <br>
+    <a href="chapter1.html">another page</a> <!--relative path-->
+    <br>
+    <a href="chapter1.html" target="_blank">new page</a>
+    <br>
+    <hr>
+    <!--images-->
+    <img src="https://png.pngtree.com/png-vector/20201223/ourmid/pngtree-yellow-box-frame-cover-notebook-clipart-png-image_2635621.jpg" alt="book image" title="book-absolute path" height="100"/>
+
+    <img src="image.png" title="book-relative path" height="100">
+    <hr>
+    <!--formatting tags-->
+    <br>
+    <b>bold</b> <br>
+    <i>italic</i> <br>
+    <u>underline</u> <br>
+    <big>bigger text</big> 
+    <small>smaller tag</small>
+    <hr> <!--hr a horizontal ruler-->
+    <sub>sub script</sub><p>H<sub>2</sub>O</p>
+    <sup>super script</sup><p>Cu<sup>2+</sup></p>
+    <pre>pre tag- 
+        displays text without ignoring spaces n next line.
+        unlike p or div that auto formats the spaces/ next lines.
+    </pre>
+
+    <hr>
+    <p>page layout techniques - semantic tags - makes the code more readable and improves UE</p>
+    <header>header tag- semantic tags</header>
+    <main> main tag- contains the data. 3 tags in main tag
+        <section>section</section>
+        <article>article</article>
+        <aside>aside</aside>
+    </main>
+    <footer>footer tag- foot of the page</footer>
+
+    <div>div- a container used for other elements, a non-semantic tag. block element</div>
+    <span>span- a containerfor other elements, can be used for giving sp attributes. inline element</span>
+
+    <hr>
+    <!--lists-->
+
+    <p>lists - ordered and unordered</p>
+    <ul>
+        <li>item 1</li>
+        <li>item 2</li>
+            <ul>
+                <li>sublist 1 of list 2</li>
+                <li>sublist 2 of list 2</li>
+            </ul>
+        <li>item 3</li>
+    </ul>
+
+    <ol>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+    </ol>
+
+    <hr>
+    <!--tables-->
+    <p>tabular data</p>
+    <table border="1px">
+        <caption>table heading</caption>
+        <thead>
+            <tr>
+                <th>row 1 col 1</th>
+                <th colspan="2">row 1 col 2</th>
+                <!--to merge cols-->
+                <!--rowspan- to merge rows-->
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>row 2 col 1</td>
+                <td>row 2 col 2</td>
+            </tr>
+
+            <tr>
+                <td>row 3 col 1</td>
+                <td>row 3 col 2</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr>
+    <!--forms-->
+    <form action="">
+        <label>Full Name: </label>
+        <input type="text" placeholder="name" required>
+        <br>
+        <label>email: </label>
+        <input type="email" placeholder="email">
+        <br><br>
+        <label>Password: </label>
+        <input type="password" placeholder="name">
+        <br>
+        <label class="ed">
+            select education
+            <input type="radio" value="ug" name="education" id="1" checked>ug
+            <input type="radio" value="pg" name="education" id="2">pg
+        </label>
+        <br>
+        <label class="tech">Select technologies
+            <input type="checkbox" value="html" name="technology[]" id="1">html
+            <input type="checkbox" value="css" name="technology[]" id="2">css
+            <input type="checkbox" value="js" name="technology[]" id="3">js 
+        </label>
+        <br>
+
+        <label>Select city
+            <select name="city">
+                <option value="hyderabad">hyderabad</option>
+                <option value="bangalore">bangalore</option>
+                <option value="mumbai">mumbai</option>
+                <option value="chennai">chennai</option>
+            </select>
+        </label>
+        
+        <br>
+        <textarea name="feedback" id="fd" placeholder="feedback" rows="5"></textarea>
+        <br>
+
+        <input type="submit" value="submit">
+    </form>
+
+    <iframe src="http://wikipedia.com"></iframe> <!--iframe is used to run a different website in your website. but not all sites have permission for this-->
+
+    <video src="" controls height="" width="" loop>vedio</video> <!--loop- video runs in loop/ autoplay- plays video as soon a page is loaded-->
+    <audio src="" controls >audio</audio>
+</body>
+</html>
