@@ -1,0 +1,41 @@
+* {
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+    background-color: lightcyan;
+}
+
+/* properties */
+       /* color- used to set the color of foreground(text, elements, links)
+        background-color used to set the color of bg  */
+
+.style {
+    color: blue;
+    font-weight: 200;
+    font-style: italic;
+    background-color: blanchedalmond;
+}
+
+button {
+    color: brown;
+    background-color: blanchedalmond;
+    text-decoration: dotted underline;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+/* text properties */
+
+/* text-align: left (default)/right/center/ start/end */
+/* text-decoration: underline/line-through/none   */
+/* font weight: normal (<400) /bold (400)/bolder (>400)/ lighter/ 100-900 */
+/* font-family: diff fonts (arial/times) (fall-back mechanism)*/
+/* font-styles: italic/oblique.... */
+
+/* units in css- absolute and relative */
+/* pixels (px): 96px = 1 inch */
+
+/* line-height - ht or distance btw lines: normal/in px*/
+/* text-transform: uppercase/lowercase/capitalize/none */

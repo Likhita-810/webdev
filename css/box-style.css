@@ -1,0 +1,30 @@
+div {
+    height: 50px;
+    width: 100px;
+    background-color: bisque;
+    border-width: 5px;
+    border-style: double;
+    border-color: black;
+    /* border shorthand- border: 2px double black */
+    margin: 10px;
+    /* margin-top/right/bottom/left - margin: 1px(top) 2px(right) 3px(bottom) 4px(left) */
+    padding: 20px;
+    /* padding-top/right/bottom/left - padding: 1px(top) 2px(right) 3px(bottom) 4px(left) */
+    border-radius: 5px; /* 5% - can also be given as percentages */
+    /* margin-bottom: 20px; */
+}
+
+h1 {
+    text-align: center;
+}
+
+div .div {
+    display: inline;
+    margin-top: 40px;
+}
+
+.btn {
+    display: block;
+    margin-top: 40px;
+    padding: 10px;
+}
