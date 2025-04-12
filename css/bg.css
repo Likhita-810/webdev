@@ -38,3 +38,69 @@ div {
     justify-content: space-around;
 }
 
+@media (max-width: 600px) {
+    body {
+        background-color: rgb(239, 116, 116);
+    }
+}
+
+#transit {
+    width: 100px;
+    height: 50px;
+    background-color: blue;
+    color: white;
+    transition-duration: 1s;
+    transition-delay: 1s;
+    transform: rotate(20deg);
+}
+
+#transit:hover {
+    background-color: black;
+    transition-duration: 2s;
+    font-size: 20px;
+    transition-timing-function: steps(4);
+    /* transform: scale(2,4); */
+    /* transform: translate(150px, 250px); */
+    transform: skew(80deg);
+}
+
+/* transition shorthand: property name duration timing-function delay  */
+#transit:active {
+    background-color: brown;
+}
+
+#anime {
+    height: 100px;
+    width: 100px;
+    background-color: blueviolet;
+    animation-name: bgAnime;
+    position: absolute;
+    animation-duration: 5s;
+    animation-timing-function: ease-in;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    /* animation: name duration timing-func delay iteration-count */
+}
+
+@keyframes bgAnime {
+    from {background-color: blueviolet;left: 20px;}
+    to {background-color: blue;left: 200px;}
+    0% {font-family: 10px;}
+    50% {font-size: 20px;}
+    100% {font-size: larger;}
+}
+
+#loader {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 20px solid yellow;
+    border-top: 20px solid orange;    
+    animation: loaderAnime 4s ease-in 0s infinite normal;
+}
+
+@keyframes loaderAnime {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
