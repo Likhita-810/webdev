@@ -10,7 +10,7 @@ div {
     /* margin-top/right/bottom/left - margin: 1px(top) 2px(right) 3px(bottom) 4px(left) */
     padding: 20px;
     /* padding-top/right/bottom/left - padding: 1px(top) 2px(right) 3px(bottom) 4px(left) */
-    border-radius: 5px; /* 5% - can also be given as percentages */
+    border-radius: 5px; /* 10% - can also be given as percentages */
     /* margin-bottom: 20px; */
 }
 
