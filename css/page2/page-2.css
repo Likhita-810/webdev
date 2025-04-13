@@ -1,0 +1,40 @@
+.main {
+    /* background-image: url(pg2bg.png);
+    background-size: cover; */
+    text-align: center;
+    color: white;
+    margin-top: 150px;
+    margin-left: 500px;
+    width: 550px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 1.5em;
+    position: relative;
+}
+
+/* p {
+    text-transform: uppercase;
+} */
+
+h1 {
+    text-transform: capitalize;
+    line-height: 1.5em;
+    font-size: 35px;
+}
+
+.demo-bg {
+    opacity: 90%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.bg {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(166, 83, 243, 0.3);
+    position: absolute;
+}
