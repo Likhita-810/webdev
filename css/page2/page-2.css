@@ -3,17 +3,30 @@
     background-size: cover; */
     text-align: center;
     color: white;
-    margin-top: 150px;
-    margin-left: 500px;
-    width: 550px;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(166, 83, 243, 0.2);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     line-height: 1.5em;
-    position: relative;
+    position: absolute;
+    margin-top: -10px;
+    margin-left: -10px;
 }
 
 /* p {
     text-transform: uppercase;
 } */
+
+.content {
+    width: 500px;
+    margin-top: 15%;
+    margin-left: 35%;
+}
+
+.content p {
+    font-weight: 300;
+    font-size: 20px;
+}
 
 h1 {
     text-transform: capitalize;
@@ -30,11 +43,11 @@ h1 {
     height: 100vh;
 }
 
-.bg {
+/* .bg {
     left: 0;
     top: 0;
     width: 100%;
     height: 100vh;
     background-color: rgba(166, 83, 243, 0.3);
     position: absolute;
-}
+} */
