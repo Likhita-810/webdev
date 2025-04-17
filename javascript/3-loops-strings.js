@@ -80,10 +80,50 @@ for (let n = 0; n <=50; n++){
     // }
     // console.log("congrats! you entered the right number");
 
-// strings
+// strings - immutable- cant be changed.
 
 let strVar = 'likhita'
 console.log(strVar.length);
 console.log(strVar[4]);
 
 // template literals - a way to have embedded expressions in strings
+// written using ``
+
+let obj = {
+    item: 'pen',
+    price: 10,
+}
+
+console.log("the cost of", obj.item, "is", obj.price, "rupees");
+// using template literals
+// string interpolation: to create string by substituting placeholders
+console.log(`the cost of ${obj.item} is ${obj.price} rupees`);
+
+console.log(`the sum of first three numbers is ${1+2+3}`);
+
+// escape characters
+// \n- new line , \t - tab space, 
+
+// string methods - builtin funcs to manipulate a string, methods doesnt change the original value but creates a new string
+let strMethods = "         Likhita   Konathala     ";
+console.log(strMethods.toUpperCase());
+console.log(strMethods.toLowerCase());
+console.log(strMethods.trim()); //removes white spaces from start and end but not the spaces btw the string
+console.log(strMethods.slice(0,15)); // returns part of string (start index is inclusive and end index is non inclusive)
+console.log(str.concat(strMethods)); //str1+str2
+console.log(strMethods.replace("K", 'k'));
+let str3 = 'hellOOOOOOO';
+console.log(str3.replace('O','o')); // replaces only first value
+console.log(str3.replaceAll('O', 'o')); // replaces all start values with the new value
+console.log(str3.charAt(0));
+
+// ex
+// prompt the user to enter thier full name. generate a username for them based on the input. start username with @, followed by ythier full name and ending with the fullname length
+
+let fullName = prompt("please enter your full name (without spaces) to generate username");
+// let userName = '@'+ fullName+fullName.length;
+// let userName = '@'.concat(fullName, fullName.length);
+let userName = '@' + fullName.concat(fullName.length);
+console.log(userName);
+
+
