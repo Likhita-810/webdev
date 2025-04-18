@@ -29,6 +29,7 @@ document.body.style.background = 'green';
 let h2 = document.querySelector('h2');
 console.dir(h2);
 console.dir(h2.innerText);
+console.dir(h2.innerHTML);
 h2.innerText = h2.innerText + ' from likhita';
 
 // create 3 divs with cmn class names - box, access them & add some unique text to each of them
@@ -43,7 +44,43 @@ console.log(divs[2]);
 // divs[2].innerText = 'new new value of third div';
 
 let i = 1;
-for (div of divs) {
+for (let div of divs) {
     div.innerText = `new unique value ${i}`;
     i++
 }
+
+let p = document.querySelector("p");
+console.log(p);
+console.log(p.innerHTML);
+
+let value = p.getAttribute('id');
+console.log(value);
+
+let clsVal = p.getAttribute('class');
+console.log(clsVal);
+
+p.setAttribute('class', 'para'); // changes the old value with new value
+
+h2.style.fontSize = "30px";
+
+// creating an element
+let btn = document.createElement('button');
+btn.innerHTML = "click me";
+console.log(btn);
+
+//p.append(btn); // adds btn at the end of p ele
+// p.prepend(btn); // adds btn at the start of the p element
+// p.before(btn); // adds btn before the element
+p.after(btn);
+
+// h2.remove(); //removes the h2 element
+
+btn.style.backgroundColor ="red";
+btn.style.color = "white";
+
+// adding class name
+p.classList.add('attr-para');
+console.log(p.classList);
+
+p.classList.remove('attr-para');
+console.log(p.classList);
